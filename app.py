@@ -1,16 +1,15 @@
+# dashboard/app.py
 import streamlit as st
+from pathlib import Path
 
-st.set_page_config(page_title="Quadrantes da Produtividade", layout="wide")
+st.set_page_config(
+    page_title="Quadrantes da Produtividade Legislativa",
+    page_icon="📊",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
-st.title("📌 Bem-vindo ao Dashboard dos Quadrantes da Produtividade Legislativa")
+st.title("📊 Quadrantes da Produtividade Legislativa")
+st.markdown("Selecione uma página no menu lateral para começar.")
 
-st.markdown("""
-Este painel interativo permite explorar e comparar a atuação dos deputados federais da 57ª legislatura com base em dois critérios principais:
-
-- **Produtividade Legislativa:** Indicador composto que avalia a relevância e os resultados das proposições apresentadas.
-- **Gasto CEAP Ajustado:** Valor total das despesas com exercício parlamentar, ajustado para remover passagens aéreas comuns a todos os mandatos.
-
-Os parlamentares são distribuídos em quadrantes conforme seu desempenho em custo e produtividade.
-
-➡️ Use o menu lateral para acessar os quadrantes interativos.
-""")
+st.sidebar.success("Escolha uma aba acima ☝️")

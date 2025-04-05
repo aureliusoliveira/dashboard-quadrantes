@@ -6,7 +6,7 @@ def grafico_quadrantes_interativo(df):
     mediana_gasto = df["gasto_ceap_ajustado"].median()
 
     # Ordena para o ranking
-    df["ranking"] = df["pontuacao_legislativa"].rank(ascending=False, method="min").astype(int)
+    df["ranking"] = df["produtividade_legislativa"].rank(ascending=False, method="min").astype(int)
 
     # Scatter plot dos deputados
     scatter_partidos = []
