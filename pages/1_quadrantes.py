@@ -98,3 +98,6 @@ ranking_df["Gasto CEAP Ajustado (R$)"] = ranking_df["Gasto CEAP Ajustado (R$)"].
 
 # Exibe tabela
 st.dataframe(ranking_df, use_container_width=True, height=600)
+
+if __name__ == "__main__":
+    print(df.head())
