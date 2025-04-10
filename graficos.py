@@ -58,7 +58,8 @@ def grafico_quadrantes_interativo(df):
         dict(
             x=mediana_produtividade, y=df["gasto_ceap_ajustado"].max(),
             text=f"Mediana Produtividade ({mediana_produtividade:.1f})",
-            showarrow=False
+            showarrow=False,
+            yshift=15
         ),
         dict(
             x=df["produtividade_legislativa"].max(), y=mediana_gasto,
